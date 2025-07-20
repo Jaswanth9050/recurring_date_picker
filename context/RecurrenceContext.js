@@ -4,18 +4,18 @@ const RecurrenceContext = createContext();
 
 export const RecurrenceProvider = ({ children }) => {
   const [recurrence, setRecurrence] = useState({
-    type: "daily",          // daily | weekly | monthly | yearly
-    interval: 1,            // number of units to repeat
-    days: [],               // [0-6] for weekly recurrence (Sun to Sat)
-    startDate: new Date().toISOString().split("T")[0], // default today
-    endDate: "",            // "" means no end
+    type: "daily",         
+    interval: 1,           
+    days: [],              
+    startDate: new Date().toISOString().split("T")[0], 
+    endDate: "",            
     monthlyPattern: {
     week: "",
     weekday: ""
     },
     yearly: {
-        month: 0,// 0 = January, 11 = December
-        day: 1   // 1–31 (must validate in UI)
+        month: 0,
+        day: 1   
     }
   });
 

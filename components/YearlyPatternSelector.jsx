@@ -1,4 +1,4 @@
-// components/YearlyPatternSelector.jsx
+
 import React from "react";
 import { useRecurrence } from "@/context/RecurrenceContext";
 
@@ -21,7 +21,7 @@ const YearlyPatternSelector = () => {
                 ...prev,
                 yearly: {
                   day: selected.getDate(),
-                  month: selected.getMonth(), // JS months are 0-based
+                  month: selected.getMonth(), 
                 },
               }));
             }

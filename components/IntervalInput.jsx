@@ -1,4 +1,4 @@
-// components/IntervalInput.jsx
+
 import React from "react";
 import { useRecurrence } from "../context/RecurrenceContext";
 
@@ -10,7 +10,7 @@ const IntervalInput = () => {
     if (!isNaN(value) && value > 0) {
       setRecurrence({ ...recurrence, interval: value });
     } else {
-      setRecurrence({ ...recurrence, interval: "" }); // reset on invalid
+      setRecurrence({ ...recurrence, interval: "" }); 
     }
   };
 

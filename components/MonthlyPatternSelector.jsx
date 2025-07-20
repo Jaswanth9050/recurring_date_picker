@@ -77,7 +77,6 @@ const MonthlyPatternSelector = () => {
         </div>
       </div>
 
-      {/* Optional display summary */}
       {recurrence.monthlyPattern.week && recurrence.monthlyPattern.weekday !== "" && (
         <p className="mt-3 text-sm text-green-600 font-medium">
           Pattern selected:{" "}

@@ -7,11 +7,11 @@ const DaySelector = () => {
   const toggleDay = (dayIndex) => {
     const updated = recurrence.days.includes(dayIndex)
       ? recurrence.days.filter((d) => d !== dayIndex)
-      : [...recurrence.days, dayIndex].sort((a, b) => a - b); // keep sorted
+      : [...recurrence.days, dayIndex].sort((a, b) => a - b); 
     setRecurrence({ ...recurrence, days: updated });
   };
 
-  if (recurrence.type !== "weekly") return null; // Only show for weekly recurrence
+  if (recurrence.type !== "weekly") return null; 
 
   return (
     <div className="flex flex-wrap gap-2 mt-4">
