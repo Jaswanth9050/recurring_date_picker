@@ -44,16 +44,17 @@ The app supports:
 
 ### Folder Structure
 
-📁 components/
-│ ├── CalendarPreview.jsx // Shows generated dates visually
-│ ├── RecurringDatePicker.jsx // Main component with all inputs
-│ ├── JSONPreview.jsx // JSON output view
-│
-📁 context/
-│ └── RecurrenceContext.jsx // Global recurrence state logic
-│
-📁 lib/
-│ └── generateDates.js // Core logic for calculating dates
+components/
+├── CalendarPreview.jsx        // Renders calendar with recurring dates highlighted
+├── RecurringDatePicker.jsx    // Main input form for selecting recurrence rules
+├── JSONPreview.jsx            // Shows JSON output of recurrence config
+
+context/
+└── RecurrenceContext.jsx      // Holds and provides global recurrence state
+
+lib/
+└── generateDates.js           // Utility for calculating recurring dates based on rules
+
 
 
 ### Key Logic
